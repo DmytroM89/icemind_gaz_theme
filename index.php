@@ -7,17 +7,11 @@ get_header(); ?>
 
 <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
-
-        <?php if (have_rows('slider')) : ?>
+        <?php $image = get_field('image');?>
+        <?php if (!empty($image)) : ?>
             <div class="mainSlider">
-                <div class="js_mainSlider">
-                    <?php while (have_rows('slider')) : the_row(); ?>
-                        <div>
-                            <div class="mainSlider__item"
-                                 style="background-image: url('<?php the_sub_field('image') ?>')">
-                            </div>
-                        </div>
-                    <?php endwhile; ?>
+                <div class="mainSlider__item"
+                     style="background-image: url('<?php echo $image; ?>')">
                 </div>
             </div>
         <?php endif; ?>
@@ -25,12 +19,16 @@ get_header(); ?>
         <div class="bContent">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12">
-                        <div class="bContent__image">
-                            <?php the_post_thumbnail('thumb2') ?>
-                        </div>
-                        <div class="content padding">
+                    <div class="col-xs-offset-6 col-xs-6">
+                        <div class="content">
                             <?php the_content(); ?>
+                            <a href="#" class="btn btn__detail" role="button">Докладніше про нас
+                                <span class="arrow">
+                                    <svg width="44" height="14">
+                                        <use xlink:href="#arrow-right" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                    </svg>
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>

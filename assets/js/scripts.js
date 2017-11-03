@@ -7,15 +7,6 @@ jQuery(document).ready(function($) {
     $('#page-preloader .spinner').fadeOut('slow');
 
     // Slider
-    $('.js_mainSlider').slick({
-        arrows: false,
-        dots: false,
-        infinite: true,
-        fade: true,
-        speed: 500,
-        autoplay: true,
-        autoplaySpeed: 7000
-    });
     $('.js_clients').slick({
         arrows: false,
         dots: false,

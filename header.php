@@ -119,29 +119,32 @@
                 </div>
             </div>
         </div>
-	    <div class="header__bottom container">
-		    <div class="row">
-			    <div class="col-xs-4">
-				    <a href="<?php echo get_home_url(); ?>" class="header__logo">
-						    <span class="img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="logo">
-                            </span>
-					    <span class="text">
-                                <?php echo __('[:ru]ООО «УКРАИНСКАЯ ГАЗОВАЯ <br>КОМПАНИЯ[:en]UKRAINIAN GAS <br>COMPANY[:ua]ТОВ «УКРАЇНСЬКА ГАЗОВА <br>КОМПАНІЯ'); ?>
-						    <strong><?php echo __('[:ru]«Центр»[:en]«Center»[:ua]«Центр»'); ?></strong>
-                            </span>
-				    </a>
-			    </div>
-			    <div class="col-xs-8">
-				    <div class="header__menu">
-					    <?php wp_nav_menu("menu=main_menu"); ?>
-				    </div>
-				    <a href="#" class="header__menuBtn">
-					    <svg width="34" height="34">
-						    <use xlink:href="#menu" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-					    </svg>
-				    </a>
-			    </div>
-		    </div>
+	    <div class="header__bottom">
+            <div class="header__box">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <a href="<?php echo get_home_url(); ?>" class="header__logo">
+                            <div class="row middle-xs">
+                                <div class="img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="logo">
+                                </div>
+                                <div class="text">
+                                    <?php echo __('[:ru]ООО «АТИЛЛА ЭНЕРДЖИ[:en]«ATILLA ENERGY»[:ua]ТОВ «АТІЛЛА ЕНЕРДЖІ»'); ?>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="header__menu">
+                            <?php wp_nav_menu("menu=main_menu"); ?>
+                        </div>
+                        <a href="#" class="header__menuBtn">
+                            <svg width="34" height="34">
+                                <use xlink:href="#menu" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
 	    </div>
     </header>

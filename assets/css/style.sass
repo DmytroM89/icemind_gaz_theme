@@ -12,13 +12,11 @@ $black--80: #343434
 $red: #ed1c24
 $green: #71c04c
 $gray: #565656
-$gray--light: #969696
+$gray--light: #dddddd
 
 $pink: #ed77b4
 $yellow: #ffd13d
 $blue: #07a6d5
-$blue--dark: #121635
-$blue--lite: #2136cc
 
 body
   font-family: 'DinNextCyr'
@@ -195,6 +193,7 @@ body
 .content
   h1, h2, h3, h4, h5, h6
     line-height: 1.3
+    text-transform: uppercase
     @media (min-width: $lg)
       font-size: 30px
       margin-bottom: 30px
@@ -206,18 +205,14 @@ body
       margin-bottom: 15px
 
   p
-    margin-bottom: 10px
     line-height: 1.65
-    text-indent: 30px
+    font-weight: 300
   ol, ul
     line-height: 1.5
     margin-left: 30px
     margin-bottom: 10px
   a
-    text-decoration: underline
-    &:hover
-      opacity: 0.8
-      text-decoration: none
+    text-decoration: none
   img
     &.aligncenter
       margin: 0 auto 20px
@@ -237,8 +232,28 @@ body
     max-width: 100%
     height: auto
 
+// Button
+.btn
+  display: inline-block
+  background-color: $blue
+  padding: 17px 20px
+  font-size: 14px
+  font-weight: 400
+  text-transform: uppercase
+  box-shadow: 0 2px 0 $black
+  margin-top: 45px
+
+// Arrow
+.arrow
+  position: relative
+  top: 2px
+  margin-left: 10px
+
 // Header
 .header
+  position: absolute
+  width: 100%
+  z-index: 1
   @include element(top)
     color: $white
     line-height: 25px
@@ -254,14 +269,25 @@ body
     svg
       @include inline-block(middle, 3px)
       margin-right: 5px
-      fill: $white
+      fill: $blue
+      transform: scale(-1, 1)
   @include element(bottom)
-    background: $white
-    padding: 0 40px
     position: relative
     top: -50px
+    font-weight: 300
     @media (max-width: $md-top)
-      border-top: 4px solid $red
+      top: 0
+  @include element(box)
+    background: $white
+    padding: 0 35px
+    width: 1300px
+    margin: 0 auto
+    @media (max-width: $md-top)
+      width: 100%
+    @include lg
+      width: 100%
+    @include xl
+      width: 100%
   @include element(contacts)
     span
       @include inline-block()
@@ -272,7 +298,7 @@ body
     position: relative
     &::after
       content: ''
-      border-top: 4px solid $white
+      border-top: 4px solid $blue
       border-left: 4px solid transparent
       border-right: 4px solid transparent
       @include position(absolute, 50%, 0, null, null)
@@ -282,8 +308,8 @@ body
         display: block
     .language-chooser
       @include position(absolute, 100%, 0, null, null, 100)
-      padding: 10px 15px
-      background: $red
+      padding: 10px 20px
+      background: $blue
       list-style: none
       display: none
       animation: down 0.3s
@@ -292,7 +318,7 @@ body
   @include element(logo)
     width: 400px
     height: 90px
-    padding-top: 24px
+    padding-top: 15px
     @include xs
       width: 250px
     @include clearfix()
@@ -300,7 +326,6 @@ body
       float: left
       img
         display: block
-        width: 30px
     .text
       display: block
       font-weight: bold
@@ -309,20 +334,18 @@ body
       @media (min-width: $xl)
         font-size: 24px
         padding-top: 2px
-        margin-left: 45px
+        margin-left: 10px
         line-height: 0.85
       @media (min-width: $sm) and (max-width: $lg-top)
         font-size: 20px
         padding-top: 4px
-        margin-left: 40px
+        margin-left: 10px
         line-height: 0.85
       @include xs
         font-size: 14px
         padding-top: 6px
-        margin-left: 35px
+        margin-left: 15px
         line-height: 1.2
-      strong
-        color: $green
   @include element(menu)
     position: relative
     @media (max-width: $md-top)
@@ -346,8 +369,8 @@ body
         &.current_page_parent,
         &.current_page_ancestor
           & > a
-            color: $green
-            border-bottom: 2px solid $green
+            color: $blue
+            border-bottom: 2px solid $blue
         &:hover
           & > ul
             display: block
@@ -360,9 +383,10 @@ body
           @media (min-width: $xl)
             font-size: 18px
           @media (max-width: $lg-top)
-            font-size: 16px
+            font-size: 18px
           &:hover
-            color: $green
+            color: $blue
+            font-weight: 700
         & > ul
           @include position(absolute, 100%, null, null, 0, 100)
           background: $white
@@ -370,13 +394,7 @@ body
           display: none
           margin-top: -2px
           animation: down .3s
-          border-left: 1px solid $gray
-          border-right: 1px solid $gray
-          border-bottom: 1px solid $gray
           li
-            //border-top: 1px solid $gray
-            &:first-child
-              //border-top: 2px solid $green
             &.current-menu-item,
             &.current_page_item,
             &.current-menu-ancestor,
@@ -384,7 +402,7 @@ body
             &.current_page_parent,
             &.current_page_ancestor
               & > a
-                background: $green
+                background: $blue
                 color: $white
             & > ul
               display: none
@@ -394,8 +412,8 @@ body
               padding: 5px 25px
               white-space: nowrap
               &:hover
-                background: $green
-                color: $white
+                background: $gray--light
+                color: $blue
   @include element(menuBtn)
     @media (min-width: $lg)
       display: none
@@ -415,13 +433,23 @@ body
     background-size: cover
     background-repeat: no-repeat
     background-position: center
+    &::after
+      content: ''
+      display: block
+      background: url("../img/bg-pattern.png") no-repeat fixed center / cover
+      width: 100%
+      height: 100%
+      opacity: 0.4
     @media (min-width: $lg)
-      height: 550px
+      height: 600px
     @media (max-width: $md-top)
       height: 400px
 
+
+
 // Content
 .bContent
+  background: url("../img/welcome-bg.jpg") no-repeat left top
   @media (min-width: $lg)
     padding: 70px 0
   @media (max-width: $md-top)
@@ -433,49 +461,14 @@ body
   .page-id-29 &
     padding-bottom: 0
     min-height: 400px
-  @include element(title)
-    text-align: center
-    text-transform: uppercase
-    @media (min-width: $lg)
-      font-size: 30px
-      margin-bottom: 40px
-    @media (min-width: $sm) and (max-width: $md-top)
-      font-size: 24px
-      margin-bottom: 30px
-    @include xs
-      font-size: 20px
-      margin-bottom: 20px
-  @include element(image)
-    float: left
-    @media (min-width: $lg)
-      width: 40%
-    @include md
-      width: 30%
-      padding: 0 40px 40px 0
-    @include sm
-      width: 30%
-      padding: 0 30px 30px 0
-    @include xs
-      width: 30%
-      padding: 0 20px 20px 0
-    img
-      display: block
-      @media (min-width: $lg)
-        box-shadow: -15px 15px 0 $green
-      @include md
-        box-shadow: -10px 10px 0 $green
-      @include sm
-        box-shadow: -10px 10px 0 $green
-      @include xs
-        box-shadow: -5px 5px 0 $green
   .content
-    &.padding
-      @media (min-width: $lg)
-        margin-left: 40%
-        padding-left: 40px
     @media (min-width: 1200px)
       .home &
-        padding-top: 50px
+        padding-top: 130px
+        padding-bottom: 130px
+    span
+      color: $blue
+
 
 // Advantages
 .advantages
