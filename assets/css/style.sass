@@ -12,7 +12,8 @@ $black--80: #343434
 $red: #ed1c24
 $green: #71c04c
 $gray: #565656
-$gray--light: #dddddd
+$gray--back: #efefef
+$gray--light: #969696
 
 $pink: #ed77b4
 $yellow: #ffd13d
@@ -196,17 +197,16 @@ body
     text-transform: uppercase
     @media (min-width: $lg)
       font-size: 30px
-      margin-bottom: 30px
     @media (min-width: $sm) and (max-width: $md-top)
       font-size: 24px
-      margin-bottom: 20px
     @include xs
       font-size: 20px
-      margin-bottom: 15px
 
   p
     line-height: 1.65
     font-weight: 300
+    font-size: 16px
+    text-align: justify
   ol, ul
     line-height: 1.5
     margin-left: 30px
@@ -242,12 +242,28 @@ body
   text-transform: uppercase
   box-shadow: 0 2px 0 $black
   margin-top: 45px
+  line-height: 1
 
 // Arrow
 .arrow
   position: relative
   top: 2px
   margin-left: 10px
+
+// Divider
+hr
+  width: 150px
+  height: 1px
+  background-color: $black
+  border: none
+  position: relative
+  right: 75px
+  @media (min-width: $lg)
+    margin: 10px 0 40px
+  @media (min-width: $sm) and (max-width: $md-top)
+    margin: 10px 0 30px
+  @include xs
+    margin: 10px 0 20px
 
 // Header
 .header
@@ -464,32 +480,35 @@ body
   .content
     @media (min-width: 1200px)
       .home &
-        padding-top: 130px
-        padding-bottom: 130px
-    span
+        padding-top: 60px
+        padding-bottom: 60px
+    strong
       color: $blue
 
 
 // Advantages
 .advantages
-  background: url("../img/advantages.jpg") no-repeat fixed center / cover
-  text-align: center
+  background-image: linear-gradient(to right, $green 50%, $gray--back 50%)
   @media (min-width: $lg)
-    padding: 70px 0 0
+    padding: 70px 0 70px 0
   @media (max-width: $md-top)
-    padding: 35px 0 0
+    padding: 35px 0 35px 0
+  @include element(tile)
+    background: #fff
+    text-align: center
+    padding: 40px 35px
+    margin-top: 30px
   @include element(title)
+    color: $white
+    text-transform: uppercase
     @media (min-width: $lg)
       font-size: 30px
-      margin-bottom: 40px
     @media (min-width: $sm) and (max-width: $md-top)
       font-size: 24px
-      margin-bottom: 30px
     @include xs
       font-size: 20px
       margin-bottom: 20px
   @include element(icon)
-    height: 64px
     margin-bottom: 10px
     img
       display: block
@@ -502,12 +521,29 @@ body
     @media (max-width: $md-top)
       font-size: 14px
   @include element(text)
-    min-height: 100px
     padding: 0 10px
+    color: $gray--light
+    font-weight: 300
     @media (min-width: $lg)
-      font-size: 15px
+      font-size: 16px
     @media (max-width: $md-top)
       font-size: 12px
+  @include element(imgbox)
+    padding-top: 30px
+    height: 100%
+    @media (min-width: $xl)
+      margin: 0px 20px
+    @include lg
+      margin: 0px 10px
+  @include element(img)
+    background: url("../img/advantages.jpg") no-repeat center / cover
+    width: 100%
+    height: inherit
+    @media (max-width: $md)
+      height: 300px
+  hr
+    background-color: $white
+    margin-bottom: 0
 
 // Clients
 .clients

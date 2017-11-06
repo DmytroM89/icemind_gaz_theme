@@ -19,9 +19,9 @@ get_header(); ?>
         <div class="bContent">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-offset-6 col-xs-6">
+                    <div class="col-lg-offset-6 col-xs-12 col-sm-12 col-md-12 col-lg-6">
                         <div class="content">
-                            <?php the_content(); ?>
+                            <?php the_field('welcome'); ?>
                             <a href="#" class="btn btn__detail" role="button">Докладніше про нас
                                 <span class="arrow">
                                     <svg width="44" height="14">
@@ -35,7 +35,10 @@ get_header(); ?>
             </div>
         </div>
 
-        <?php if (have_rows('advantages')) : ?>
+        <?php
+            $advantages = get_field('advantages');
+            if ($advantages) : ?>
+            <?php $cnt = count($advantages); $half = $cnt/2-1; ?>
             <div class="advantages">
                 <div class="container">
                     <div class="row">
@@ -43,20 +46,57 @@ get_header(); ?>
                             <h3 class="advantages__title">
                                 <?php echo __('[:ru]Наши преимущества[:en]Our advantages[:ua]Наші переваги'); ?>
                             </h3>
+                            <hr>
                         </div>
-                        <?php while (have_rows('advantages')) : the_row(); ?>
-                        <div class="col-xs-6 col-md-3">
-                            <div class="advantages__icon">
-                                <?php echo wp_get_attachment_image(get_sub_field('icon')) ?>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                            <div class="row">
+                                <?php foreach ($advantages as $key => $adv): ?>
+                                    <?php if ($key <= $half) : ?>
+                                    <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12">
+                                        <div class="advantages__tile">
+                                            <div class="advantages__icon">
+                                                <?php echo wp_get_attachment_image($adv['icon']) ?>
+                                            </div>
+                                            <h5 class="advantages__name">
+                                                <?php echo $adv['title'] ?>
+                                            </h5>
+                                            <p class="advantages__text">
+                                                <?php echo $adv['text'] ?>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <?php endif; ?>
+                                <?php endforeach; ?>
                             </div>
-                            <h5 class="advantages__name">
-                                <?php the_sub_field('title') ?>
-                            </h5>
-                            <p class="advantages__text">
-                                <?php the_sub_field('text') ?>
-                            </p>
                         </div>
-                        <?php endwhile; ?>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                            <div class="advantages__imgbox">
+                                <div class="advantages__img"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                            <div class="row">
+                                <?php foreach ($advantages as $key => $adv): ?>
+                                    <?php if ($key > $half) : ?>
+                                        <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12">
+                                            <div class="advantages__tile">
+                                                <div class="advantages__icon">
+                                                    <?php echo wp_get_attachment_image($adv['icon']) ?>
+                                                </div>
+                                                <h5 class="advantages__name">
+                                                    <?php echo $adv['title'] ?>
+                                                </h5>
+                                                <p class="advantages__text">
+                                                    <?php echo $adv['text'] ?>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    <?php endif; ?>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -4427,20 +4427,19 @@ body {
   text-transform: uppercase; }
   @media (min-width: 992px) {
     .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
-      font-size: 30px;
-      margin-bottom: 30px; } }
+      font-size: 30px; } }
   @media (min-width: 544px) and (max-width: 991px) {
     .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
-      font-size: 24px;
-      margin-bottom: 20px; } }
+      font-size: 24px; } }
   @media (max-width: 543px) {
     .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
-      font-size: 20px;
-      margin-bottom: 15px; } }
+      font-size: 20px; } }
 
 .content p {
   line-height: 1.65;
-  font-weight: 300; }
+  font-weight: 300;
+  font-size: 16px;
+  text-align: justify; }
 
 .content ol, .content ul {
   line-height: 1.5;
@@ -4481,12 +4480,30 @@ body {
   -webkit-box-shadow: 0 2px 0 #000;
      -moz-box-shadow: 0 2px 0 #000;
           box-shadow: 0 2px 0 #000;
-  margin-top: 45px; }
+  margin-top: 45px;
+  line-height: 1; }
 
 .arrow {
   position: relative;
   top: 2px;
   margin-left: 10px; }
+
+hr {
+  width: 150px;
+  height: 1px;
+  background-color: #000;
+  border: none;
+  position: relative;
+  right: 75px; }
+  @media (min-width: 992px) {
+    hr {
+      margin: 10px 0 40px; } }
+  @media (min-width: 544px) and (max-width: 991px) {
+    hr {
+      margin: 10px 0 30px; } }
+  @media (max-width: 543px) {
+    hr {
+      margin: 10px 0 20px; } }
 
 .header {
   position: absolute;
@@ -4678,7 +4695,7 @@ body {
             padding: 5px 25px;
             white-space: nowrap; }
             .header__menu .menu > li > ul li a:hover {
-              background: #dddddd;
+              background: #969696;
               color: #07a6d5; }
   @media (min-width: 992px) {
     .header__menuBtn {
@@ -4729,34 +4746,42 @@ body {
     min-height: 400px; }
   @media (min-width: 1200px) {
     .home .bContent .content {
-      padding-top: 130px;
-      padding-bottom: 130px; } }
-  .bContent .content span {
+      padding-top: 60px;
+      padding-bottom: 60px; } }
+  .bContent .content strong {
     color: #07a6d5; }
 
 .advantages {
-  background: url("../img/advantages.jpg") no-repeat fixed center/cover;
-  text-align: center; }
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #71c04c), color-stop(50%, #efefef));
+  background-image: -webkit-linear-gradient(left, #71c04c 50%, #efefef 50%);
+  background-image: -moz-linear-gradient(left, #71c04c 50%, #efefef 50%);
+  background-image: -o-linear-gradient(left, #71c04c 50%, #efefef 50%);
+  background-image: linear-gradient(to right, #71c04c 50%, #efefef 50%); }
   @media (min-width: 992px) {
     .advantages {
-      padding: 70px 0 0; } }
+      padding: 70px 0 70px 0; } }
   @media (max-width: 991px) {
     .advantages {
-      padding: 35px 0 0; } }
-  @media (min-width: 992px) {
-    .advantages__title {
-      font-size: 30px;
-      margin-bottom: 40px; } }
-  @media (min-width: 544px) and (max-width: 991px) {
-    .advantages__title {
-      font-size: 24px;
-      margin-bottom: 30px; } }
-  @media (max-width: 543px) {
-    .advantages__title {
-      font-size: 20px;
-      margin-bottom: 20px; } }
+      padding: 35px 0 35px 0; } }
+  .advantages__tile {
+    background: #fff;
+    text-align: center;
+    padding: 40px 35px;
+    margin-top: 30px; }
+  .advantages__title {
+    color: #fff;
+    text-transform: uppercase; }
+    @media (min-width: 992px) {
+      .advantages__title {
+        font-size: 30px; } }
+    @media (min-width: 544px) and (max-width: 991px) {
+      .advantages__title {
+        font-size: 24px; } }
+    @media (max-width: 543px) {
+      .advantages__title {
+        font-size: 20px;
+        margin-bottom: 20px; } }
   .advantages__icon {
-    height: 64px;
     margin-bottom: 10px; }
     .advantages__icon img {
       display: block;
@@ -4771,14 +4796,34 @@ body {
       .advantages__name {
         font-size: 14px; } }
   .advantages__text {
-    min-height: 100px;
-    padding: 0 10px; }
+    padding: 0 10px;
+    color: #969696;
+    font-weight: 300; }
     @media (min-width: 992px) {
       .advantages__text {
-        font-size: 15px; } }
+        font-size: 16px; } }
     @media (max-width: 991px) {
       .advantages__text {
         font-size: 12px; } }
+  .advantages__imgbox {
+    padding-top: 30px;
+    height: 100%; }
+    @media (min-width: 1200px) {
+      .advantages__imgbox {
+        margin: 0px 20px; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .advantages__imgbox {
+        margin: 0px 10px; } }
+  .advantages__img {
+    background: url("../img/advantages.jpg") no-repeat center/cover;
+    width: 100%;
+    height: inherit; }
+    @media (max-width: 768px) {
+      .advantages__img {
+        height: 300px; } }
+  .advantages hr {
+    background-color: #fff;
+    margin-bottom: 0; }
 
 .clients {
   text-align: center; }
