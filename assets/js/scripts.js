@@ -11,32 +11,31 @@ jQuery(document).ready(function($) {
         arrows: false,
         dots: false,
         infinite: true,
-        fade: false,
         speed: 500,
         autoplay: true,
         autoplaySpeed: 7000,
-        slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToShow: 6,
+        slidesToScroll: 3,
         responsive: [
             {
                 breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4
+                }
+            },
+            {
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3
                 }
             },
             {
-                breakpoint: 992,
+                breakpoint: 544,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 544,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
                 }
             }
         ]

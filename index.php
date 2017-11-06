@@ -16,7 +16,7 @@ get_header(); ?>
             </div>
         <?php endif; ?>
 
-        <div class="bContent">
+        <div class="welcome">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-offset-6 col-xs-12 col-sm-12 col-md-12 col-lg-6">
@@ -108,8 +108,9 @@ get_header(); ?>
                     <div class="row">
                         <div class="col-xs-12">
                             <h3 class="clients__title">
-                                <?php echo __('[:ru]Наши клиенты[:en]Our clients[:ua]Наші кліенти'); ?>
+                                <?php echo __('[:ru]Наши клиенты[:en]Our clients[:ua]Наші клієнти'); ?>
                             </h3>
+                            <hr>
                         </div>
                         <div class="col-xs-12">
                             <div class="js_clients">
