@@ -14,7 +14,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <div class="row">
-                            <div class="bContacts__col col-lg-4">
+                            <div class="bContacts__col col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
                                 <h6>
                                     <?php echo __('[:ru]звоните[:en]call[:ua]телефонуйте'); ?>
                                 </h6>
@@ -25,7 +25,7 @@
                                     <?php the_field('phone-2', 'options') ?>
                                 </p>
                             </div>
-                            <div class="bContacts__col col-lg-4">
+                            <div class="bContacts__col col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
                                 <h6>
                                     <?php echo __('[:ru]пишите[:en]write[:ua]пишіть'); ?>
                                 </h6>
@@ -40,13 +40,17 @@
                                     </a>
                                 </p>
                             </div>
-                            <div class="bContacts__col col-lg-4">
+                            <div class="bContacts__col col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
                                 <h6>
                                     <?php echo __('[:ru]офис[:en]office[:ua]офіс'); ?>
                                 </h6>
                                 <p>
                                     <?php the_field('address', 'options') ?>
                                 </p>
+                            </div>
+                            <div class="bContacts__copyright col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <hr>
+                                <p>&copy; 2016 <?php echo __('[:ru]Все права защищены[:en]All rights reserved[:ua]Всі права захищені'); ?></p>
                             </div>
                         </div>
                     </div>

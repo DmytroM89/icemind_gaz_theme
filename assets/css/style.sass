@@ -625,47 +625,93 @@ hr
     width: 100%
     height: 100%
     background-color: rgba(0, 0, 0, 0.8)
-  @media (min-width: $md)
-    border-top: 30px solid $white
   @media (max-width: $sm-top)
-    padding: 20px 0
+    padding: 40px 0
+    text-align: center
   a
     color: inherit
     &:hover
       opacity: .7
   @include element(logo)
     position: relative
-    bottom: 0
-    width: 324px
     background: $white
     color: $black
     text-align: center
-    padding-top: 50px
-    padding-bottom: 110px
+    @media (max-width: $sm-top)
+      margin: 0 auto 50px
+      padding-top: 40px
+      padding-bottom: 90px
+      max-width: 325px
+    @media (max-width: $lg-top)
+      padding-top: 60px
+      padding-bottom: 100px
+      width: 300px
+    @media (min-width: $xl)
+      max-width: 325px
+      padding-top: 70px
+      padding-bottom: 110px
     img
-      min-width: 100px
+      @media (max-width: $lg-top)
+        width: 80px
+      @media (min-width: $xl)
+        width: 100px
     .text
       font-weight: bold
-      font-size: 24px
       color: $black
       text-transform: uppercase
+      @media (max-width: $md-top)
+        font-size: 20px
+      @media (min-width: $lg)
+        font-size: 24px
   @include element(col)
     position: relative
+    @media (max-width: $sm-top)
+      margin-bottom: 30px
     @media (min-width: $md)
       text-align: left
-    @media (max-width: $sm-top)
-      //padding: 20px 0 20px 80px
-  h6
-    font-size: 16px
-    margin-bottom: 40px
-    &::before
-      content: ''
-      display: inline-block
-      width: 48px
-      height: 1px
-      background: $white
-      vertical-align: middle
-      margin-right: 30px
+      margin-bottom: 10px
+    h6
+      &::before
+        content: ''
+        display: inline-block
+        width: 48px
+        height: 1px
+        background: $white
+        vertical-align: middle
+        @media (max-width: $lg-top)
+          margin-right: 15px
+        @media (min-width: $xl)
+          margin-right: 30px
+      @media (max-width: $lg-top)
+        font-size: 14px
+        margin-bottom: 5px
+      @media (min-width: $xl)
+        margin-bottom: 40px
+        font-size: 16px
+    p
+      font-weight: 300
+      @media (max-width: $lg-top)
+        font-size: 14px
+      @media (min-width: $xl)
+        font-size: 15px
+  @include element(copyright)
+    position: relative
+    color: $white
+    hr
+      background-color: $white
+      right: 0
+      @media (max-width: $lg-top)
+        width: 100%
+        margin-top: 20px
+        margin-bottom: 10px
+      @media (min-width: $xl)
+        margin-top: 100px
+        margin-bottom: 30px
+        width: 110%
+    p
+      text-transform: uppercase
+      font-weight: 300
+      font-size: 15px
 
 .contacts
   @media (min-width: $lg)

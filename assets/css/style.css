@@ -4947,48 +4947,109 @@ hr {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8); }
-  @media (min-width: 768px) {
-    .bContacts {
-      border-top: 30px solid #fff; } }
   @media (max-width: 767px) {
     .bContacts {
-      padding: 20px 0; } }
+      padding: 40px 0;
+      text-align: center; } }
   .bContacts a {
     color: inherit; }
     .bContacts a:hover {
       opacity: .7; }
   .bContacts__logo {
     position: relative;
-    bottom: 0;
-    width: 324px;
     background: #fff;
     color: #000;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 110px; }
-    .bContacts__logo img {
-      min-width: 100px; }
+    text-align: center; }
+    @media (max-width: 767px) {
+      .bContacts__logo {
+        margin: 0 auto 50px;
+        padding-top: 40px;
+        padding-bottom: 90px;
+        max-width: 325px; } }
+    @media (max-width: 1199px) {
+      .bContacts__logo {
+        padding-top: 60px;
+        padding-bottom: 100px;
+        width: 300px; } }
+    @media (min-width: 1200px) {
+      .bContacts__logo {
+        max-width: 325px;
+        padding-top: 70px;
+        padding-bottom: 110px; } }
+    @media (max-width: 1199px) {
+      .bContacts__logo img {
+        width: 80px; } }
+    @media (min-width: 1200px) {
+      .bContacts__logo img {
+        width: 100px; } }
     .bContacts__logo .text {
       font-weight: bold;
-      font-size: 24px;
       color: #000;
       text-transform: uppercase; }
+      @media (max-width: 991px) {
+        .bContacts__logo .text {
+          font-size: 20px; } }
+      @media (min-width: 992px) {
+        .bContacts__logo .text {
+          font-size: 24px; } }
   .bContacts__col {
     position: relative; }
+    @media (max-width: 767px) {
+      .bContacts__col {
+        margin-bottom: 30px; } }
     @media (min-width: 768px) {
       .bContacts__col {
-        text-align: left; } }
-  .bContacts h6 {
-    font-size: 16px;
-    margin-bottom: 40px; }
-    .bContacts h6::before {
+        text-align: left;
+        margin-bottom: 10px; } }
+    .bContacts__col h6::before {
       content: '';
       display: inline-block;
       width: 48px;
       height: 1px;
       background: #fff;
-      vertical-align: middle;
-      margin-right: 30px; }
+      vertical-align: middle; }
+      @media (max-width: 1199px) {
+        .bContacts__col h6::before {
+          margin-right: 15px; } }
+      @media (min-width: 1200px) {
+        .bContacts__col h6::before {
+          margin-right: 30px; } }
+    @media (max-width: 1199px) {
+      .bContacts__col h6 {
+        font-size: 14px;
+        margin-bottom: 5px; } }
+    @media (min-width: 1200px) {
+      .bContacts__col h6 {
+        margin-bottom: 40px;
+        font-size: 16px; } }
+    .bContacts__col p {
+      font-weight: 300; }
+      @media (max-width: 1199px) {
+        .bContacts__col p {
+          font-size: 14px; } }
+      @media (min-width: 1200px) {
+        .bContacts__col p {
+          font-size: 15px; } }
+  .bContacts__copyright {
+    position: relative;
+    color: #fff; }
+    .bContacts__copyright hr {
+      background-color: #fff;
+      right: 0; }
+      @media (max-width: 1199px) {
+        .bContacts__copyright hr {
+          width: 100%;
+          margin-top: 20px;
+          margin-bottom: 10px; } }
+      @media (min-width: 1200px) {
+        .bContacts__copyright hr {
+          margin-top: 100px;
+          margin-bottom: 30px;
+          width: 110%; } }
+    .bContacts__copyright p {
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 15px; }
 
 @media (min-width: 992px) {
   .contacts {
