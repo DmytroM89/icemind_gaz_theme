@@ -14,6 +14,7 @@ $green: #71c04c
 $gray: #565656
 $gray--back: #efefef
 $gray--light: #969696
+$gray--menu: #dddddd
 
 $pink: #ed77b4
 $yellow: #ffd13d
@@ -243,12 +244,10 @@ body
   box-shadow: 0 2px 0 $black
   margin-top: 45px
   line-height: 1
-
-// Arrow
-.arrow
-  position: relative
-  top: 2px
-  margin-left: 10px
+  .arrow
+    position: relative
+    top: 2px
+    margin-left: 10px
 
 // Divider
 hr
@@ -295,9 +294,12 @@ hr
       top: 0
   @include element(box)
     background: $white
-    padding: 0 35px
     width: 1300px
     margin: 0 auto
+    @include xs
+      padding: 0 15px
+    @media (min-width: $sm)
+      padding: 0 35px
     @media (max-width: $md-top)
       width: 100%
     @include lg
@@ -334,14 +336,18 @@ hr
   @include element(logo)
     width: 400px
     height: 90px
-    padding-top: 15px
     @include xs
       width: 250px
+      padding-top: 22px
+    @media (min-width: $sm)
+      padding-top: 15px
     @include clearfix()
     .img
       float: left
       img
         display: block
+        @media (max-width: 420px)
+          width: 43px
     .text
       display: block
       font-weight: bold
@@ -362,6 +368,8 @@ hr
         padding-top: 6px
         margin-left: 15px
         line-height: 1.2
+      @media (max-width: 420px)
+        margin-left: 10px
   @include element(menu)
     position: relative
     @media (max-width: $md-top)
@@ -428,7 +436,7 @@ hr
               padding: 5px 25px
               white-space: nowrap
               &:hover
-                background: $gray--light
+                background: $gray--menu
                 color: $blue
   @include element(menuBtn)
     @media (min-width: $lg)
@@ -466,9 +474,11 @@ hr
 // Content
 .bContent
   @media (min-width: $lg)
-    padding: 70px 0
+    padding-top: 180px
+    padding-bottom: 80px
   @media (max-width: $md-top)
-    padding: 35px 0
+    padding-top: 110px
+    padding-bottom: 35px
   @media (min-height: 750px)
     min-height: 600px
     .home &
@@ -496,11 +506,18 @@ hr
     @media (min-width: 1200px)
       .home &
         padding-top: 50px
+    @include xs
+      padding: 0 5px
+    strong
+      color: $blue
+    p
+      @include xs
+        font-size: 14px
 
 // Welcome
 .welcome
-  background: url("../img/welcome-bg.jpg") no-repeat left top
   @media (min-width: $lg)
+    background: url("../img/welcome-bg.jpg") no-repeat left top
     padding: 70px 0
   @media (max-width: $md-top)
     padding: 35px 0

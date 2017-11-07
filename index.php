@@ -22,7 +22,7 @@ get_header(); ?>
                     <div class="col-lg-offset-6 col-xs-12 col-sm-12 col-md-12 col-lg-6">
                         <div class="content">
                             <?php the_field('welcome'); ?>
-                            <a href="#" class="btn btn__detail" role="button">Докладніше про нас
+                            <a href="<?php echo get_page_link( 27 ); ?>" class="btn welcome__btn" role="button">Докладніше про нас
                                 <span class="arrow">
                                     <svg width="44" height="14">
                                         <use xlink:href="#arrow-right" xmlns:xlink="http://www.w3.org/1999/xlink"></use>

@@ -5,11 +5,13 @@
     <div class="bContent">
         <div class="container">
             <div class="row">
+                <!--
                 <div class="col-xs-12">
                     <h1 class="bContent__title">
-                        <?php the_title(); ?>
+                        /*<?php the_title(); ?>*/
                     </h1>
                 </div>
+                -->
                 <?php if (is_page(29)) : ?>
 
                     <div class="contacts">
@@ -85,12 +87,8 @@
 
 
                     <div class="col-xs-12">
-                        <?php if (get_the_post_thumbnail()) : ?>
-                            <div class="bContent__image">
-                                <?php the_post_thumbnail('thumb2') ?>
-                            </div>
-                        <?php endif; ?>
-                        <div class="content <?php if (get_the_post_thumbnail()) : ?>padding<?php endif; ?>">
+
+                        <div class="content">
                             <?php the_content(); ?>
                         </div>
                     </div>

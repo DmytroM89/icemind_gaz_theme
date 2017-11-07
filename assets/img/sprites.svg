@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"><defs>
-
-    <style>
-      .cls-1 {
-        fill: #1c1c1c;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs><symbol id="404" viewBox="0 0 472.7 512">
+</defs><symbol id="404" viewBox="0 0 472.7 512">
 
 <path d="M0.4,512C0.3,494.2,0,476.4,0,458.6c0-71.1,0-142.3,0-213.4c0-24.6,0-49.3,0-73.9c0-1.5,0-3,0-5.4c2.2,0,4.1,0,6,0
 	c27.7,0,55.3-0.1,83,0.1c3.6,0,6.2-1.1,8.7-3.7c30.3-30.5,60.8-60.8,91.1-91.3c1.3-1.3,2.3-2.8,3.4-4.1c4.3,4.5,8,8.4,12.4,13
@@ -38,7 +31,7 @@
 	C169.2,368.5,169.2,370.5,169.2,372.7z M152,348.5c-7.3,8.7-13.7,16.1-20.4,24c7.4,0,13.8,0,20.4,0C152,364.8,152,357.4,152,348.5z"/>
 <path d="M69.7,389.6c0-5.6,0-10.7,0-16.2c5.4,0,10.7,0,16.4,0c0,5.3,0,10.6,0,16.2C80.7,389.6,75.5,389.6,69.7,389.6z"/>
 <path d="M403,389.7c-5.6,0-10.7,0-16.3,0c0-5.4,0-10.8,0-16.5c5.3,0,10.6,0,16.3,0C403,378.7,403,384,403,389.7z"/>
-</symbol><symbol id="arrow-right" viewBox="0 0 43.813 14.4">
+</symbol><symbol id="arrow-right" viewBox="0 0 44 14">
   <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
 <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -67,8 +60,7 @@
                                                                                                     
                            
 <?xpacket end="w"?></metadata>
-
-  <path id="&#x424;&#x438;&#x433;&#x443;&#x440;&#x430;_1_&#x43A;&#x43E;&#x43F;&#x438;&#x44F;" data-name="&#x424;&#x438;&#x433;&#x443;&#x440;&#x430; 1 &#x43A;&#x43E;&#x43F;&#x438;&#x44F;" class="cls-1" d="M914.491,1191.01h30.277v-5.6l13.552,7.2-13.552,7.2v-5.6H914.491v-3.2Z" transform="translate(-914.5 -1185.41)"/>
+<image id="&#x424;&#x438;&#x433;&#x443;&#x440;&#x430;_1_&#x43A;&#x43E;&#x43F;&#x438;&#x44F;" data-name="&#x424;&#x438;&#x433;&#x443;&#x440;&#x430; 1 &#x43A;&#x43E;&#x43F;&#x438;&#x44F;" width="44" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAOCAQAAAD+6Ta3AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCwcNGBKCsRFtAAAAuklEQVQ4y63QL09CURgH4OfopdrdrsVk9UuYjSSi2UgRdjeCVhoUZ3DQTI5vQNKNQHASKBabER3jEpjjbzvn197fuz075w25iNz50fV7aHUU4zrVNnGjkhqGMx0fao5Tw3DuyVh1U0sDw4WekWthNYb8PgK7crnXvWkYEPIy2ZvXGWqkO8V2QuYh8SneNb2SqUfAJzvwWNOLErJkn/9U6Fv8j2ngqcKz+WYVD39pefS3W8fB3251zA6tlrDzIyUR+bwiAAAAAElFTkSuQmCC"/>
 </symbol><symbol id="mail" viewBox="0 0 40 33.3">
 <path d="M20,18.3C16.7,18.3,0,4.8,0,4.8V3.3C0,1.5,1.5,0,3.3,0h33.3C38.5,0,40,1.5,40,3.3L40,5C40,5,23.4,18.3,20,18.3z M20,22.9
 	c3.6,0,20-12.9,20-12.9l0,20c0,1.8-1.5,3.3-3.3,3.3H3.3C1.5,33.3,0,31.8,0,30l0-20C0,10,16.7,22.9,20,22.9z"/>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="43.813" height="14.4" viewBox="0 0 43.813 14.4">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="14" viewBox="0 0 44 14">
   <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
 <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -27,13 +27,5 @@
                                                                                                     
                            
 <?xpacket end="w"?></metadata>
-<defs>
-    <style>
-      .cls-1 {
-        fill: #1c1c1c;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <path id="Фигура_1_копия" data-name="Фигура 1 копия" class="cls-1" d="M914.491,1191.01h30.277v-5.6l13.552,7.2-13.552,7.2v-5.6H914.491v-3.2Z" transform="translate(-914.5 -1185.41)"/>
+<image id="Фигура_1_копия" data-name="Фигура 1 копия" width="44" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAOCAQAAAD+6Ta3AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCwcNGBKCsRFtAAAAuklEQVQ4y63QL09CURgH4OfopdrdrsVk9UuYjSSi2UgRdjeCVhoUZ3DQTI5vQNKNQHASKBabER3jEpjjbzvn197fuz075w25iNz50fV7aHUU4zrVNnGjkhqGMx0fao5Tw3DuyVh1U0sDw4WekWthNYb8PgK7crnXvWkYEPIy2ZvXGWqkO8V2QuYh8SneNb2SqUfAJzvwWNOLErJkn/9U6Fv8j2ngqcKz+WYVD39pefS3W8fB3251zA6tlrDzIyUR+bwiAAAAAElFTkSuQmCC"/>
 </svg>
