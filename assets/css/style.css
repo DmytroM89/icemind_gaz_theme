@@ -4470,7 +4470,7 @@ body {
   max-width: 100%;
   height: auto; }
 
-.btn {
+.btn, .contacts__box .form input[type="submit"] {
   display: inline-block;
   background-color: #07a6d5;
   padding: 17px 20px;
@@ -4482,7 +4482,7 @@ body {
           box-shadow: 0 2px 0 #000;
   margin-top: 45px;
   line-height: 1; }
-  .btn .arrow {
+  .btn .arrow, .contacts__box .form input[type="submit"] .arrow {
     position: relative;
     top: 2px;
     margin-left: 10px; }
@@ -4758,20 +4758,42 @@ hr {
       min-height: 200px; } }
 
 .page-id-29 .bContent {
-  padding-bottom: 0;
+  padding-bottom: 65px;
   min-height: 400px; }
 
+@media (min-width: 1199px) {
+  .bContent__contacts {
+    padding-left: 20px; } }
+
+.bContent__map {
+  height: 100%;
+  overflow: hidden;
+  position: relative; }
+  @media (max-width: 992px) {
+    .bContent__map {
+      margin-bottom: 30px; } }
+  @media (min-width: 992px) {
+    .bContent__map .map {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0; } }
+  @media (max-width: 991px) {
+    .bContent__map .map {
+      height: 300px; } }
+
 .bContent__title {
-  text-align: center;
-  text-transform: uppercase; }
+  color: #000;
+  text-transform: uppercase;
+  text-align: center; }
   @media (min-width: 992px) {
     .bContent__title {
       font-size: 30px;
-      margin-bottom: 40px; } }
+      margin-bottom: 20px; } }
   @media (min-width: 544px) and (max-width: 991px) {
     .bContent__title {
-      font-size: 24px;
-      margin-bottom: 30px; } }
+      font-size: 24px; } }
   @media (max-width: 543px) {
     .bContent__title {
       font-size: 20px;
@@ -4796,6 +4818,22 @@ hr {
 @media (max-width: 543px) {
   .bContent .content p {
     font-size: 14px; } }
+
+.bContent hr {
+  background-color: #000; }
+
+.linear__bg {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #71c04c), color-stop(50%, #efefef));
+  background-image: -webkit-linear-gradient(left, #71c04c 50%, #efefef 50%);
+  background-image: -moz-linear-gradient(left, #71c04c 50%, #efefef 50%);
+  background-image: -o-linear-gradient(left, #71c04c 50%, #efefef 50%);
+  background-image: linear-gradient(to right, #71c04c 50%, #efefef 50%); }
+  .linear__bg .bContent__title {
+    color: #fff;
+    text-align: left;
+    margin-bottom: 0; }
+  .linear__bg hr {
+    background-color: #fff; }
 
 @media (min-width: 992px) {
   .welcome {
@@ -5081,77 +5119,67 @@ hr {
       font-weight: 300;
       font-size: 15px; }
 
-@media (min-width: 992px) {
-  .contacts {
-    padding: 0 0 70px; } }
-
-@media (max-width: 991px) {
-  .contacts {
-    padding: 0 0 35px; } }
-
-@media (max-width: 767px) {
-  .contacts .row > div {
-    padding-bottom: 25px; } }
-
-.contacts a {
-  color: inherit; }
-  .contacts a:hover {
-    color: #71c04c; }
-
-.contacts p {
-  max-width: 230px;
-  margin: 0 auto;
-  text-align: center; }
-  @media (max-width: 543px) {
-    .contacts p {
-      font-size: 12px; } }
-
-.contacts__icon {
+.contacts {
   background: #fff;
-  border: 5px solid #71c04c;
-  -webkit-border-radius: 50%;
-     -moz-border-radius: 50%;
-          border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  padding: 12.5px 0 0;
-  margin: 0 auto 20px; }
-  .contacts__icon svg {
-    display: block;
-    fill: #71c04c;
-    margin: 0 auto; }
-
-.contacts h6 {
-  text-align: center;
-  margin: 0 auto 10px; }
-
-.contacts__sep {
-  position: relative;
-  width: 1px;
-  background: #fff; }
-
-.contacts__box {
-  position: relative; }
+  margin-bottom: 30px;
+  font-weight: 300; }
+  @media (min-width: 1199px) {
+    .contacts {
+      padding: 90px 50px; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .contacts {
+      padding: 70px 30px; } }
   @media (max-width: 991px) {
-    .contacts__box {
-      position: relative; } }
-  @media (min-width: 992px) {
-    .contacts__box .map {
-      position: absolute;
-      top: 0;
-      right: -300px;
-      bottom: 0;
-      left: 0;
-      z-index: 1; } }
-  @media (max-width: 991px) {
-    .contacts__box .map {
-      height: 300px; } }
+    .contacts {
+      padding: 30px; } }
+  @media (max-width: 767px) {
+    .contacts .row > div {
+      padding-bottom: 25px; } }
+  .contacts a {
+    color: inherit; }
+    .contacts a:hover {
+      color: #71c04c; }
+  .contacts p {
+    font-size: 18px;
+    max-width: 230px; }
+    @media (min-width: 1199px) {
+      .contacts p {
+        padding-left: 28px; } }
+    @media (max-width: 1199px) {
+      .contacts p {
+        font-size: 14px;
+        padding-left: 0; } }
+  .contacts__icon {
+    margin-bottom: 10px; }
+    .contacts__icon svg {
+      display: inline-block;
+      fill: #199649;
+      -webkit-transform: scale(-1, 1);
+         -moz-transform: scale(-1, 1);
+          -ms-transform: scale(-1, 1);
+           -o-transform: scale(-1, 1);
+              transform: scale(-1, 1); }
+    .contacts__icon h6 {
+      display: inline-block;
+      margin-left: 6px;
+      font-size: 30px;
+      font-weight: 300; }
+      @media (max-width: 1199px) {
+        .contacts__icon h6 {
+          font-size: 26px; } }
+  .contacts__sep {
+    position: relative;
+    width: 1px;
+    background: #fff; }
+  .contacts__box .bContent__title {
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px; }
   .contacts__box .form {
     position: relative;
     z-index: 2;
     background: #fff;
-    padding: 30px 30px;
-    min-height: 400px; }
+    padding: 30px 30px; }
     .contacts__box .form .row {
       margin: 0 -15px; }
       .contacts__box .form .row > div {
@@ -5166,26 +5194,24 @@ hr {
     .contacts__box .form textarea {
       display: block;
       width: 100%;
-      height: 155px;
-      padding: 8px 20px;
+      padding: 8px 15px;
       border: 1px solid #b1b1b1;
       background: #f5f5f5;
       resize: none; }
+      @media (max-width: 1199px) {
+        .contacts__box .form textarea {
+          height: 150px; } }
+      @media (min-width: 1200px) {
+        .contacts__box .form textarea {
+          height: 65px; } }
     .contacts__box .form .wpcf7-form-control-wrap {
       display: block;
       position: relative;
       padding-bottom: 25px; }
     .contacts__box .form input[type="submit"] {
-      background: #71c04c;
-      color: #fff;
-      width: 250px;
-      max-width: 100%;
       display: block;
-      height: 35px;
-      text-transform: uppercase;
       margin: 0 auto;
-      border: none;
-      font-size: 16px; }
+      border: none; }
     .contacts__box .form .wpcf7-not-valid-tip {
       color: #ed1c24;
       font-size: 12px;
