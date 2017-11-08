@@ -245,10 +245,16 @@ body
   box-shadow: 0 2px 0 $black
   margin-top: 45px
   line-height: 1
-  .arrow
+  &::after
+    display: inline-block
+    content: ''
+    background: url("../img/arrow-right.png") no-repeat
+    width: 44px
+    height: 14px
+    vertical-align: baseline
     position: relative
     top: 2px
-    margin-left: 10px
+    margin-left: 15px
 
 // Divider
 hr
@@ -772,9 +778,9 @@ hr
   a
     color: inherit
     &:hover
-      color: $green
+      color: $green--dark
   p
-    font-size: 18px
+    font-size: 15px
     max-width: 230px
     @media (min-width: $lg-top)
       padding-left: 28px
@@ -834,6 +840,17 @@ hr
         display: block
         position: relative
         padding-bottom: 25px
+      .arrow
+        &::after
+          display: inline-block
+          content: ''
+          background: url("../img/arrow-right.png") no-repeat
+          width: 44px
+          height: 14px
+          vertical-align: baseline
+          position: relative
+          top: 2px
+          margin-left: 25px
       input[type="submit"]
         @extend .btn
         display: block

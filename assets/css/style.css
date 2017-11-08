@@ -4482,10 +4482,16 @@ body {
           box-shadow: 0 2px 0 #000;
   margin-top: 45px;
   line-height: 1; }
-  .btn .arrow, .contacts__box .form input[type="submit"] .arrow {
+  .btn::after, .contacts__box .form input[type="submit"]::after {
+    display: inline-block;
+    content: '';
+    background: url("../img/arrow-right.png") no-repeat;
+    width: 44px;
+    height: 14px;
+    vertical-align: baseline;
     position: relative;
     top: 2px;
-    margin-left: 10px; }
+    margin-left: 15px; }
 
 hr {
   width: 150px;
@@ -5138,9 +5144,9 @@ hr {
   .contacts a {
     color: inherit; }
     .contacts a:hover {
-      color: #71c04c; }
+      color: #199649; }
   .contacts p {
-    font-size: 18px;
+    font-size: 15px;
     max-width: 230px; }
     @media (min-width: 1199px) {
       .contacts p {
@@ -5208,6 +5214,16 @@ hr {
       display: block;
       position: relative;
       padding-bottom: 25px; }
+    .contacts__box .form .arrow::after {
+      display: inline-block;
+      content: '';
+      background: url("../img/arrow-right.png") no-repeat;
+      width: 44px;
+      height: 14px;
+      vertical-align: baseline;
+      position: relative;
+      top: 2px;
+      margin-left: 25px; }
     .contacts__box .form input[type="submit"] {
       display: block;
       margin: 0 auto;
