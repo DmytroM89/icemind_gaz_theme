@@ -22,7 +22,7 @@ get_header(); ?>
                     <div class="col-lg-offset-6 col-xs-12 col-sm-12 col-md-12 col-lg-6">
                         <div class="content">
                             <?php the_field('welcome'); ?>
-                            <a href="<?php echo get_page_link( 27 ); ?>" class="btn welcome__btn" role="button">Докладніше про нас</a>
+                            <a href="<?php echo get_page_link( 27 ); ?>" class="btn welcome__btn" role="button"><?php echo __('[:ru]Детальнее о нас[:en]About us[:ua]Докладніше про нас'); ?></a>
                         </div>
                     </div>
                 </div>

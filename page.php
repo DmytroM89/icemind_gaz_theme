@@ -4,15 +4,26 @@
 
     <div class="bContent <?php if (is_page(29)) : ?>linear__bg<?php endif; ?>">
         <div class="container">
-            <?php if (is_page(29)) : ?>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h1 class="bContent__title">
-                            <?php the_title(); ?>
-                        </h1>
-                        <hr>
-                    </div>
-                </div>
+	        <?php if (is_page(27)) : ?>
+		        <div class="row">
+			        <div class="col-xs-12">
+				        <div class="content">
+					        <?php the_field('about'); ?>
+				        </div>
+			        </div>
+		        </div>
+	        <?php endif; ?>
+			<?php if (!is_page(27)) : ?>
+	        <div class="row">
+		        <div class="col-xs-12">
+			        <h1 class="bContent__title">
+				        <?php the_title(); ?>
+			        </h1>
+			        <hr>
+		        </div>
+	        </div>
+			<?php endif; ?>
+	        <?php if (is_page(29)) : ?>
                 <div class="row">
                     <div class="col-xs-12 col-lg-4">
                         <div class="bContent__map">

@@ -4470,7 +4470,7 @@ body {
   max-width: 100%;
   height: auto; }
 
-.btn, .contacts__box .form input[type="submit"] {
+.btn {
   display: inline-block;
   background-color: #07a6d5;
   padding: 17px 20px;
@@ -4482,7 +4482,9 @@ body {
           box-shadow: 0 2px 0 #000;
   margin-top: 45px;
   line-height: 1; }
-  .btn::after, .contacts__box .form input[type="submit"]::after {
+  .btn:hover {
+    background-color: #0089b4; }
+  .btn::after {
     display: inline-block;
     content: '';
     background: url("../img/arrow-right.png") no-repeat;
@@ -4680,7 +4682,8 @@ hr {
           text-transform: uppercase;
           color: #000;
           line-height: 90px;
-          height: 90px; }
+          height: 90px;
+          font-weight: 700; }
           @media (min-width: 1200px) {
             .header__menu .menu > li > a {
               font-size: 18px; } }
@@ -4688,13 +4691,13 @@ hr {
             .header__menu .menu > li > a {
               font-size: 18px; } }
           .header__menu .menu > li > a:hover {
-            color: #07a6d5;
-            font-weight: 700; }
+            color: #07a6d5; }
         .header__menu .menu > li > ul {
           position: absolute;
           top: 100%;
           left: 0;
           z-index: 100;
+          min-width: 341px;
           background: #fff;
           list-style: none;
           display: none;
@@ -4712,7 +4715,8 @@ hr {
             font-size: 16px;
             display: block;
             padding: 5px 25px;
-            white-space: nowrap; }
+            white-space: normal;
+            line-height: normal; }
             .header__menu .menu > li > ul li a:hover {
               background: #dddddd;
               color: #07a6d5; }
@@ -4736,8 +4740,7 @@ hr {
   .mainSlider__item::after {
     content: '';
     display: block;
-    background: url("../img/bg-pattern.png") no-repeat fixed center/cover;
-    width: 100%;
+    background: url("../img/bg-pattern.png") repeat;
     height: 100%;
     opacity: 0.4; }
   @media (min-width: 992px) {
@@ -4791,8 +4794,7 @@ hr {
 
 .bContent__title {
   color: #000;
-  text-transform: uppercase;
-  text-align: center; }
+  text-transform: uppercase; }
   @media (min-width: 992px) {
     .bContent__title {
       font-size: 30px;
@@ -4864,9 +4866,6 @@ hr {
   .home .welcome .content {
     padding-top: 60px;
     padding-bottom: 60px; } }
-
-.welcome .content strong {
-  color: #07a6d5; }
 
 .advantages {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #71c04c), color-stop(50%, #efefef));
@@ -5224,7 +5223,7 @@ hr {
       position: relative;
       top: 2px;
       margin-left: 25px; }
-    .contacts__box .form input[type="submit"] {
+    .contacts__box .form .submit__btn {
       display: block;
       margin: 0 auto;
       border: none; }

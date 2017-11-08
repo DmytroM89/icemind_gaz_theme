@@ -20,6 +20,7 @@ $gray--menu: #dddddd
 $pink: #ed77b4
 $yellow: #ffd13d
 $blue: #07a6d5
+$blue--dark: #0089b4
 
 body
   font-family: 'DinNextCyr'
@@ -245,6 +246,8 @@ body
   box-shadow: 0 2px 0 $black
   margin-top: 45px
   line-height: 1
+  &:hover
+    background-color: $blue--dark
   &::after
     display: inline-block
     content: ''
@@ -411,15 +414,16 @@ hr
           color: $black
           line-height: 90px
           height: 90px
+          font-weight: 700
           @media (min-width: $xl)
             font-size: 18px
           @media (max-width: $lg-top)
             font-size: 18px
           &:hover
             color: $blue
-            font-weight: 700
         & > ul
           @include position(absolute, 100%, null, null, 0, 100)
+          min-width: 341px
           background: $white
           list-style: none
           display: none
@@ -441,7 +445,8 @@ hr
               font-size: 16px
               display: block
               padding: 5px 25px
-              white-space: nowrap
+              white-space: normal
+              line-height: normal
               &:hover
                 background: $gray--menu
                 color: $blue
@@ -467,8 +472,7 @@ hr
     &::after
       content: ''
       display: block
-      background: url("../img/bg-pattern.png") no-repeat fixed center / cover
-      width: 100%
+      background: url("../img/bg-pattern.png") repeat
       height: 100%
       opacity: 0.4
     @media (min-width: $lg)
@@ -510,7 +514,6 @@ hr
   @include element(title)
     color: $black
     text-transform: uppercase
-    text-align: center
     @media (min-width: $lg)
       font-size: 30px
       margin-bottom: 20px
@@ -564,8 +567,6 @@ hr
       .home &
         padding-top: 60px
         padding-bottom: 60px
-    strong
-      color: $blue
 
 // Advantages
 .advantages
@@ -851,8 +852,7 @@ hr
           position: relative
           top: 2px
           margin-left: 25px
-      input[type="submit"]
-        @extend .btn
+      .submit__btn
         display: block
         margin: 0 auto
         border: none
