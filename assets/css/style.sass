@@ -691,7 +691,7 @@ hr
       padding-bottom: 90px
       max-width: 325px
     @media (max-width: $lg-top)
-      padding-top: 60px
+      padding-top: 70px
       padding-bottom: 100px
       width: 300px
     @media (min-width: $xl)
@@ -760,11 +760,12 @@ hr
       text-transform: uppercase
       font-weight: 300
       font-size: 15px
-      @include md
-        font-size: 10px
-
-    .right
-      @media (min-width: $sm-top)
+      @media (max-width: $lg-top)
+        font-size: 12px
+    .link
+      @media (max-width: $lg)
+        margin-top: 5px
+      @media (min-width: $lg)
         text-align: right
 
 .contacts

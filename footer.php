@@ -55,7 +55,7 @@
                                         <p>&copy; 2016 <?php echo __('[:ru]Все права защищены[:en]All rights reserved[:ua]Всі права захищені'); ?></p>
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                                        <p class="right"><?php echo __('[:ru]Разработка сайта[:en]The development of the site[:ua]Розробка сайту'); ?> <a href="http://astudio.ck.ua/" target="_blank"><?php echo __('[:ru]Веб студия "Astudio"[:en]Web Studio "Astudio"[:ua]Веб студія "Astudio"'); ?></a></p>
+                                        <p class="link"><?php echo __('[:ru]Разработка сайта[:en]The development of the site[:ua]Розробка сайту'); ?> <a href="http://astudio.ck.ua/" target="_blank"><?php echo __('[:ru]Веб студия "Astudio"[:en]Web Studio "Astudio"[:ua]Веб студія "Astudio"'); ?></a></p>
                                     </div>
                                 </div>
                             </div>

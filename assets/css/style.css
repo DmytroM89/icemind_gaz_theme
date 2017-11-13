@@ -5040,7 +5040,7 @@ hr {
         max-width: 325px; } }
     @media (max-width: 1199px) {
       .bContacts__logo {
-        padding-top: 60px;
+        padding-top: 70px;
         padding-bottom: 100px;
         width: 300px; } }
     @media (min-width: 1200px) {
@@ -5122,11 +5122,14 @@ hr {
       text-transform: uppercase;
       font-weight: 300;
       font-size: 15px; }
-      @media (min-width: 768px) and (max-width: 991px) {
+      @media (max-width: 1199px) {
         .bContacts__copyright p {
-          font-size: 10px; } }
-    @media (min-width: 767px) {
-      .bContacts__copyright .right {
+          font-size: 12px; } }
+    @media (max-width: 992px) {
+      .bContacts__copyright .link {
+        margin-top: 5px; } }
+    @media (min-width: 992px) {
+      .bContacts__copyright .link {
         text-align: right; } }
 
 .contacts {
