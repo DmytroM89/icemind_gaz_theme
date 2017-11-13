@@ -5122,6 +5122,12 @@ hr {
       text-transform: uppercase;
       font-weight: 300;
       font-size: 15px; }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .bContacts__copyright p {
+          font-size: 10px; } }
+    @media (min-width: 767px) {
+      .bContacts__copyright .right {
+        text-align: right; } }
 
 .contacts {
   background: #fff;

@@ -45,9 +45,11 @@ jQuery(document).ready(function($) {
     // Contacts
     // Map
     function initMap() {
+        var lat = 50.522921,
+            lng = 30.244798;
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 15,
-            center: {lat: 50.422596, lng: 30.508900},
+            center: {lat: lat, lng: lng},
             mapTypeControl: false,
             scaleControl: true,
             streetViewControl: true,
@@ -62,7 +64,7 @@ jQuery(document).ready(function($) {
             }
         });
         var marker = new google.maps.Marker({
-            position: {lat: 50.422596, lng: 30.508900},
+            position: {lat: lat, lng: lng},
             map: map
         });
     }

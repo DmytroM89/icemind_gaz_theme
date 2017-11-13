@@ -760,6 +760,12 @@ hr
       text-transform: uppercase
       font-weight: 300
       font-size: 15px
+      @include md
+        font-size: 10px
+
+    .right
+      @media (min-width: $sm-top)
+        text-align: right
 
 .contacts
   background: $white
